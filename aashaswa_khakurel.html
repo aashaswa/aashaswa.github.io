@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div id="navbar">
+        <img src="image.png" class="logo">
+        <ul>
+            <li class="navComponents"><a href="#home">Home</a></li>
+            <li class="navComponents"><a href="#usages">Usages</a></li>
+            <li class="navComponents"><a href="#information">Info</a></li>
+            <li class="navComponents"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="contain">
+        <div class="box">
+            <img src="picc.png" class="pic">
+            <div class="content">
+                <div class="input">
+                    <label for="height">Age</label>
+                    <input type="text" class="text-input" id="age" placeholder="enter the age" autocomplete="off" required>
+                </div>
+                <div class="gender">
+                    <label class="container">
+                        <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" id="f"><p class="text">Female</p>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="containerHW">
+                    <div class="inputH">
+                        <label for="height">Height(cm)</label>
+                        <input type="number" id="height" placeholder="enter your height" required>
+                    </div>
+                    <div class="inputW">
+                        <label for="weight">Weight(kg)</label>
+                        <input type="number" id="weight" placeholder="enter your weight" required>
+                    </div>
+                    <button class="calculate" id="submit">Calculate BMI</button>
+                </div>
+                <div class="result">
+                    <div class="result-content">
+                        <img id="result-image" src="" alt="BMI Result Image" style="mix-blend-mode: multiply; background-blend-mode: multiply;">
+                        <p>Your BMI is</p>
+                        <div id="result">00.00</div>
+                        <p class="comment"></p>
+                        <p class="specs">Age: <span id="ageResult">--</span></p>
+                        <p class="specs">Height: <span id="heightResult">--</span></p>
+                        <p class="specs">Weight: <span id="weightResult">--</span></p>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Usages" >
+       
+        <p>
+            <h2>
+                USAGES
+            </h2>
+            <ol>
+
+<li ><b>Health Assessment</b>: Identifies health risks associated with weight status.
+</li>
+<li><b>Weight Management:</b> Helps set realistic weight goals and track progress.
+</li>      
+<li><b>Clinical Screening:</b> Identifies individuals needing further evaluation.
+</li>           
+<li><b>Public Health Research:</b> Analyzes trends and guides policy-making.
+</li>          
+<li><b>Fitness Assessment:</b> Provides a measure of body composition.
+</li>           
+<li><b>Insurance Purposes:</b> Influences insurance premiums and coverage.
+</li>           
+<li><b>Nutritional Guidance:</b> Supports dietary recommendations.
+</li>           
+<li><b>Pediatric Growth Monitoring:</b> Tracks children's growth and development.
+
+</li>     
+            </ol>   
+        </p>
+    </div>`
+    <div class="information">
+        <p>
+            <h2>Information about BMI Calculator</h2>
+            
+                <li><b>What is BMI?</b>: Body Mass Index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</li>
+                <li><b>How is BMI calculated?</b>: BMI is calculated by dividing a person's weight in kilograms by the square of their height in meters. The formula is: BMI = weight (kg) / (height (m) * height (m))</li>
+                <li><b>Interpreting BMI values:</b> BMI provides a simple numeric representation of a person's weight in relation to their height. However, it does not directly measure body fat and may not be accurate for everyone, particularly athletes or those with high muscle mass.</li>
+                <li><b>Factors to consider:</b> It is important to interpret BMI values alongside other factors such as age, gender, and overall health to assess an individual's weight status accurately.</li>
+           
+        </p>
+    </div>
+    
+    <footer>
+        <div class="footercontainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/profile.php?id=100010260431486"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/aashaswakhakurel/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/aashaswa"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/aashaswak21"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div >
+            <p id="footer">Copyright &copy;2024 All rights reserved ; Designed by <span class="designer">Aashaswa</span></p>
+        </div>
+    </footer>
+    
+<script src="try.js"></script>
+</body>
+</html>
